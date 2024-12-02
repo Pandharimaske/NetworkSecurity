@@ -36,7 +36,5 @@ setup(
     version="0.0.1" , 
     author_email="pandhari2527@gmail.com" , 
     packages=find_packages() , 
-    requires=get_requirements()
+    install_requires=get_requirements()
 )
-
-
