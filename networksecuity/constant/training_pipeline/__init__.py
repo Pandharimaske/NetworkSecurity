@@ -9,7 +9,7 @@ defining common constant variable for training pipeline
 TARGET_COLUMN = "Result"
 PIPELINE_NAME: str = "NetworkSecurity"
 ARTIFACT_DIR: str = "Artifacts"
-FILE_NAME: str = "phisingData.csv"
+FILE_NAME: str = "phissingData.csv"
 
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
@@ -58,6 +58,19 @@ DATA_TRANSFORMATION_IMPUTER_PARAMS: dict = {
     "n_neighbors": 3 , 
     "weights" : "uniform"
 }
+DATA_TRANSFORMATION_TRAIN_FILE_PATH: str = "train.npy"
+DATA_TRANSFORMATION_TEST_FILE_PATH: str = "test.npy"
+
+
+"""
+Model Trainer related constant start with MODEL_TRAINER VAR NAME
+"""
+MODEL_TRAINER_DIR_NAME : str = "model_trainer"
+MODEL_TRAINER_TRAINED_DIR : str = "trained_model"
+MODEL_TRAINER_TRAINED_MODEL_NAME : str = "model.pkl"
+MODEL_TRAINER_EXPECTED_SCORE : float = 0.6
+MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD : float = 0.05
+
 
 
 
