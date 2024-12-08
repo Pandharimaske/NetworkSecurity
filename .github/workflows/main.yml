@@ -7,11 +7,10 @@ on:
         paths-ignore:
             - 'README.md'
 
-
 jobs:
     integration:
         name: Continuous Integration
-        runs-on: ubantu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
               uses: actions/checkout@v3
